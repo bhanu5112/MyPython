@@ -4,7 +4,7 @@ for i in ',.;!:':
   x=x.replace(i,"")
 x=x.split(" ")
 
-def freqWords():
+def freqWords(x):
   fqwords={}
   for i in x:
     c=x.count(i)
@@ -13,4 +13,4 @@ def freqWords():
     if i not in fqwords[c]:
       fqwords[c].append(i)
   return fqwords
-print(freqWords())
+print(freqWords(x))
